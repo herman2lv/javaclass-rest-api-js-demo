@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Book</title>
+</head>
+<body>
+<div th:replace="~{navbar::navbar}"></div>
+<h1>Book</h1>
+<p th:text="${book.isbn}"></p>
+<h2>Title</h2>
+<p th:text="${book.title}"></p>
+<h2>Author</h2>
+<p th:text="${book.author}"></p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: auto;
+    width: 300px;
+}
+
+.input-form input {
+    width: 300px;
+}
+
+.input-form button {
+    width: 100%;
+    margin: 10px auto auto;
+}
+
+.error {
+    align-self: start;
+    color: red;
+}
+
+.success {
+    align-self: start;
+    color: green;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.table {
+    margin: 10px;
+}
+
+.table .column-wide {
+    min-width: 200px;
+}
+
+.table th {
+    padding: 3px;
+}
+
+.table td {
+    padding: 3px;
+}

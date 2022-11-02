@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Books</title>
+    <script defer src="/js/jquery-3.6.1.js"></script>
+    <script defer src="/js/books.js"></script>
+</head>
+<body>
+<div th:replace="~{navbar::navbar}"></div>
+<div class="query-string" style="display: none" th:text="${#request.queryString}"></div>
+<h1>Books</h1>
+<div class="pagination">
+    <button class="first">First</button>
+    <button class="prev">Prev</button>
+    <button class="current"></button>
+    <button class="next">Next</button>
+    <button class="last">Last</button>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th class="column-wide">Title</th>
+        <th>Author</th>
+        <th>ISBN</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</body>
+</html>
